@@ -1,0 +1,9 @@
+{
+    "design_path": "/home/geojames/BindCraft/runs/Q14956/",
+    "binder_name": "Q14956",
+    "starting_pdb": "/home/geojames/BindCraft/example/Q14956.pdb",
+    "chains": "A",
+    "target_hotspot_residues": "A258-266,A283-291,A365-382",
+    "lengths": [60, 150],
+    "number_of_final_designs": 100
+}
