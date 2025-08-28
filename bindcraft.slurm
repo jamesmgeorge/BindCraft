@@ -1,13 +1,14 @@
 #!/bin/bash
 #SBATCH --nodes 1
 #SBATCH --ntasks 1
-#SBATCH --cpus-per-task 1
-#SBATCH --partition=gpu
-#SBATCH --qos=gpu
+#SBATCH --cpus-per-task 4
+#SBATCH --partition=spgpu
 #SBATCH --gres=gpu:1
-#SBATCH --mem 42gb
+#SBATCH --mem 64gb
 #SBATCH --time 72:00:00
 #SBATCH --output=bindcraft_%A.log
+#SBATCH --account=mkiyer0
+#SBATCH --job-name=Q14956
 
 # Initialise environment and modules
 # CONDA_BASE=$(conda info --base)
