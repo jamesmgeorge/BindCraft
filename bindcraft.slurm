@@ -10,12 +10,13 @@
 #SBATCH --output=bindcraft_%A.log
 
 # Initialise environment and modules
-CONDA_BASE=$(conda info --base)
-source ${CONDA_BASE}/bin/activate ${CONDA_BASE}/envs/BindCraft
-export LD_LIBRARY_PATH=${CONDA_BASE}/lib
+# CONDA_BASE=$(conda info --base)
+# source ${CONDA_BASE}/bin/activate /home/geojames/.conda/envs/BindCraft
+# export LD_LIBRARY_PATH=${CONDA_BASE}/lib
 
 # alternatively you can source the environment directly
-#source /path/to/mambaforge/bin/activate /path/to/mambaforge/envs/BindCraft
+# source /path/to/mambaforge/bin/activate /path/to/mambaforge/envs/BindCraft
+source /sw/pkgs/arc/mamba/py3.12/bin/activate /home/geojames/.conda/envs/BindCraft
 
 # Get the directory where the bindcraft script is located
 SCRIPT_DIR=$(dirname "$0")
